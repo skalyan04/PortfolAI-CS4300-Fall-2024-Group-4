@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900 text-white font-sans;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .neon-glow {
+    @apply shadow-[0_0_20px_rgba(106,90,205,0.3)];
+  }
+  
+  .neon-glow-blue {
+    @apply shadow-[0_0_20px_rgba(74,144,226,0.3)];
+  }
+  
+  .neon-glow-green {
+    @apply shadow-[0_0_20px_rgba(0,255,136,0.3)];
+  }
+  
+  .neon-glow-red {
+    @apply shadow-[0_0_20px_rgba(255,71,87,0.3)];
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-400 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .neumorphism {
+    @apply shadow-[8px_8px_16px_rgba(0,0,0,0.3),-8px_-8px_16px_rgba(255,255,255,0.02)];
+  }
+}
