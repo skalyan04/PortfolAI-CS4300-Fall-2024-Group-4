@@ -401,11 +401,6 @@ body {
     opacity: 0.05;
 }
 
-.feature-icon {
-    font-size: 56px;
-    margin-bottom: 24px;
-    filter: drop-shadow(0 0 10px rgba(106, 90, 205, 0.3));
-}
 
 .feature-card h3 {
     font-size: 22px;
