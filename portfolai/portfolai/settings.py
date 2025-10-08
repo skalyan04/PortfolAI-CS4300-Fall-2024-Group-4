@@ -122,8 +122,12 @@ USE_TZ = True
 STATIC_URL = "static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'home', 'static'),
-    os.path.join(BASE_DIR, 'static', 'frontend'),  # React build output
 ]
+
+# Add React build directory if it exists
+react_build_dir = os.path.join(BASE_DIR, 'static', 'frontend')
+if os.path.exists(react_build_dir):
+    STATICFILES_DIRS.append(react_build_dir)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
