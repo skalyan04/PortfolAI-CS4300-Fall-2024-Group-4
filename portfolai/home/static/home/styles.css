@@ -220,7 +220,7 @@ body {
 
 .desktop-screen {
     width: 600px;
-    height: 480px;
+    height: 520px;
     background: var(--bg-primary);
     border-radius: 20px;
     padding: 24px;
@@ -794,7 +794,7 @@ body {
     
     .desktop-screen {
         width: 500px;
-        height: 420px;
+        height: 460px;
     }
     
     .desktop-stock-grid {
@@ -851,7 +851,7 @@ body {
     
     .desktop-screen {
         width: 450px;
-        height: 380px;
+        height: 420px;
     }
     
     .desktop-stock-grid {
