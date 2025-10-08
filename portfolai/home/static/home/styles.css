@@ -272,7 +272,7 @@ body {
 .desktop-content {
     background: var(--card-bg);
     border-radius: 16px;
-    padding: 36px 32px 40px 32px;
+    padding: 20px; /* reduce padding */
     box-shadow: var(--shadow-card);
     border: 1px solid var(--card-border);
     flex: 0 0 auto;
@@ -280,6 +280,7 @@ body {
     flex-direction: column;
     width: 100%;
     margin-bottom: 12px;
+    box-sizing: border-box; /* make padding part of width */
 }
 
 .dashboard-section {
@@ -291,28 +292,29 @@ body {
 
 .desktop-stock-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Always 2x2 on desktop */
-    gap: 36px;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 */
+    gap: 20px; /* reduced gap for balance */
     width: 100%;
-    padding: 20px 20px 24px 20px;
-    height: auto; /* let rows expand naturally */
-    align-items: stretch; /* ensure all cards equal height */
+    height: auto;
+    align-items: stretch; /* equal height */
+    padding: 0; /* remove extra padding here */
 }
 
 .desktop-stock {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 28px;
+    padding: 20px; /* reduce padding */
     background: var(--card-bg);
-    border-radius: 24px;
+    border-radius: 16px; /* match inner panel */
     border: 1px solid var(--card-border);
     box-shadow: var(--shadow-neumorphism);
     transition: all 0.3s ease, transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    min-height: 220px;   /* consistent baseline */
+    min-height: 180px;   /* consistent, smaller baseline */
     height: 100%;        /* stretch with siblings */
+    box-sizing: border-box;
 }
 
 .desktop-stock::before {
