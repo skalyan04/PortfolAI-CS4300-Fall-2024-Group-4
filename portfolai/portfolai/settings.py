@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-_f5+_=5qv+d$qlhbcdh70md6aflnc!*8j@ds&r*!z4-puryqvq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["app-edurancontainer-20.devedu.io"]
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "home", # added by SK
+    "rest_framework"
 ]
 
 MIDDLEWARE = [
