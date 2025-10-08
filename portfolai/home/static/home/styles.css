@@ -281,9 +281,9 @@ body {
 }
 
 .dashboard-section {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .dashboard-subtitle {
@@ -302,15 +302,16 @@ body {
 }
 
 .desktop-stock-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
-    flex: 1;
-    min-height: 0;
+    height: 240px;
+    width: 100%;
 }
 
 .desktop-stock {
+    flex: 0 0 calc(50% - 10px);
+    height: calc(50% - 10px);
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -321,6 +322,8 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    min-height: 0;
+    min-width: 0;
 }
 
 .desktop-stock::before {
