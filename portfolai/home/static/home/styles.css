@@ -227,6 +227,8 @@ body {
     box-shadow: var(--shadow-neumorphism), var(--glow-purple);
     border: 2px solid var(--card-border);
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .desktop-screen::before {
@@ -248,10 +250,13 @@ body {
     align-items: center;
     color: var(--text-primary);
     font-size: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-weight: 500;
-    padding-bottom: 16px;
-    border-bottom: 1px solid var(--card-border);
+    padding: 16px 20px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-card);
 }
 
 .desktop-title {
@@ -267,10 +272,12 @@ body {
 .desktop-content {
     background: var(--card-bg);
     border-radius: 16px;
-    padding: 24px;
+    padding: 20px;
     box-shadow: var(--shadow-card);
     border: 1px solid var(--card-border);
-    height: calc(100% - 80px);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard-section {
@@ -285,8 +292,13 @@ body {
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     text-align: center;
+    padding: 12px 16px;
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-card);
 }
 
 .desktop-stock-grid {
@@ -301,8 +313,9 @@ body {
     flex-direction: column;
     padding: 20px;
     background: var(--bg-secondary);
-    border-radius: 12px;
-    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    border: 2px solid var(--card-border);
+    box-shadow: var(--shadow-card);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -322,8 +335,8 @@ body {
 }
 
 .desktop-stock:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--glow-purple), var(--shadow-card);
+    transform: translateY(-6px);
+    box-shadow: var(--glow-purple), 0 8px 32px rgba(0, 0, 0, 0.4);
     border-color: var(--accent-purple);
 }
 
