@@ -3,7 +3,7 @@ From Git BEFORE Starting Your Coding Session
 
 # PortfolAI-CS4300-Fall-2024-Group-4
 
-## 🚀 How to Run the Application
+## How to Run the Application
 
 ### Prerequisites
 - Python 3.8+ installed
