@@ -273,53 +273,119 @@ body {
     height: calc(100% - 80px);
 }
 
+.dashboard-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .desktop-stock-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    height: 100%;
+    gap: 16px;
+    flex: 1;
 }
 
 .desktop-stock {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 16px;
+    padding: 20px;
     background: var(--bg-secondary);
     border-radius: 12px;
     border: 1px solid var(--card-border);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.desktop-stock::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-purple);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .desktop-stock:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--glow-purple);
+    transform: translateY(-4px);
+    box-shadow: var(--glow-purple), var(--shadow-card);
     border-color: var(--accent-purple);
+}
+
+.desktop-stock:hover::before {
+    opacity: 0.05;
+}
+
+.stock-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
 }
 
 .stock-symbol {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--text-primary);
+    letter-spacing: 0.5px;
+}
+
+.stock-company {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 .stock-price {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 800;
     color: var(--accent-blue);
     text-shadow: var(--glow-blue);
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.stock-change {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-weight: 600;
 }
 
 .stock-change.positive {
     color: #00ff88;
-    font-weight: 600;
     text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
 }
 
 .stock-change.negative {
     color: #ff4757;
-    font-weight: 600;
     text-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+}
+
+.change-value {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.change-percent {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
 }
 
 /* Features Section */
@@ -694,7 +760,23 @@ body {
     
     .desktop-stock-grid {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 12px;
+    }
+    
+    .desktop-stock {
+        padding: 16px;
+    }
+    
+    .stock-price {
+        font-size: 20px;
+    }
+    
+    .change-value {
+        font-size: 14px;
+    }
+    
+    .change-percent {
+        font-size: 12px;
     }
     
     .features h2,
