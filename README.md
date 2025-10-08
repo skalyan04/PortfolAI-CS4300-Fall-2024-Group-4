@@ -36,6 +36,7 @@ From Git BEFORE Starting Your Coding Session
 5. **Access the application:**
    - Open devedu and go to 'app'
    - The PortfolAI landing page will be displayed
+   
    *Note: Go to portfolai/settings.py and add "app-<your_name>container-20.devedu.io"*
 
 # Test
