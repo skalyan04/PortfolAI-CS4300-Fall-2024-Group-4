@@ -9,13 +9,16 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
+    <!-- React CSS -->
+    <link rel="stylesheet" href="{% static 'frontend/assets/index.css' %}">
+</head>
+<body>
     <!-- React App will be mounted here -->
     <div id="root"></div>
     
     <!-- Load React app -->
     <script type="module" src="{% static 'frontend/assets/index.js' %}"></script>
-</head>
-<body>
+    
     <!-- Fallback content for when JavaScript is disabled -->
     <noscript>
         <div style="text-align: center; padding: 50px; color: white; background: #0f0f10;">
