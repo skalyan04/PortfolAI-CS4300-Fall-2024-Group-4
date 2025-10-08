@@ -219,8 +219,8 @@ body {
 }
 
 .desktop-screen {
-    width: 500px;
-    height: 350px;
+    width: 600px;
+    height: 400px;
     background: var(--bg-primary);
     border-radius: 20px;
     padding: 24px;
@@ -303,10 +303,11 @@ body {
 
 .desktop-stock-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
     flex: 1;
+    min-height: 0;
 }
 
 .desktop-stock {
@@ -768,30 +769,8 @@ body {
     }
     
     .desktop-screen {
-        width: 400px;
-        height: 280px;
-    }
-    
-    .desktop-stock-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 12px;
-    }
-    
-    .desktop-stock {
-        padding: 16px;
-    }
-    
-    .stock-price {
-        font-size: 20px;
-    }
-    
-    .change-value {
-        font-size: 14px;
-    }
-    
-    .change-percent {
-        font-size: 12px;
+        width: 500px;
+        height: 350px;
     }
     
     .features h2,
@@ -836,14 +815,8 @@ body {
     }
     
     .desktop-screen {
-        width: 350px;
-        height: 300px;
-    }
-    
-    .desktop-stock-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 10px;
+        width: 450px;
+        height: 320px;
     }
     
     .feature-card,
