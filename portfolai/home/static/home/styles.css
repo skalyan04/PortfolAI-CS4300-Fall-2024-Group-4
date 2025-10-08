@@ -303,7 +303,8 @@ body {
 
 .desktop-stock-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 16px;
     flex: 1;
 }
@@ -772,7 +773,8 @@ body {
     }
     
     .desktop-stock-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 12px;
     }
     
@@ -835,7 +837,13 @@ body {
     
     .desktop-screen {
         width: 350px;
-        height: 250px;
+        height: 300px;
+    }
+    
+    .desktop-stock-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
     }
     
     .feature-card,
