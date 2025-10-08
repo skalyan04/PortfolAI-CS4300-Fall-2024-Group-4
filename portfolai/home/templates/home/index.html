@@ -5,85 +5,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PortfolAI | Smart Investment Insights</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    
+    <!-- Google Fonts - Robinhood uses system fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'home/styles.css' %}">
 </head>
 <body>
-    <!-- HERO -->
-    <header class="hero">
-        <div class="overlay">
-            <h1>Investing Made Simple with AI</h1>
-            <p>Understand market trends, learn the basics, and make smarter decisions — no Wall Street degree required.</p>
-            <a href="#" class="btn">Get Started Free</a>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>PortfolAI</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Invest</a>
+                <a href="#" class="nav-link">Learn</a>
+                <a href="#" class="nav-link">News</a>
+                <a href="#" class="nav-link">Account</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-secondary">Sign In</button>
+                <button class="btn-primary">Sign Up</button>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- PROBLEM / SOLUTION -->
-    <section class="problem-solution">
-        <div class="container">
-            <h2>Why PortfolAI?</h2>
-            <div class="flex">
-                <div class="card">
-                    <h3>The Problem</h3>
-                    <p>Investing feels overwhelming. Markets move too fast. Too much jargon.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Investing for Everyone</h1>
+                <p>Commission-free investing, plus the tools you need to put your money to work.</p>
+                <div class="hero-actions">
+                    <button class="btn-primary large">Sign Up</button>
+                    <button class="btn-outline large">Learn More</button>
                 </div>
-                <div class="card">
-                    <h3>The Solution</h3>
-                    <p>PortfolAI simplifies financial markets with clear AI-powered explanations and beginner-friendly recommendations.</p>
+                <p class="hero-disclaimer">Commission-free trading. Terms apply.</p>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="mockup-header">
+                            <div class="mockup-time">9:41</div>
+                            <div class="mockup-battery">100%</div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-stock">
+                                <span class="stock-symbol">AAPL</span>
+                                <span class="stock-price">$150.25</span>
+                                <span class="stock-change positive">+2.45 (+1.66%)</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CORE FEATURES -->
+    <!-- Features Section -->
     <section class="features">
-        <h2>What You’ll Get</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <h3>📊 Trend Overviews</h3>
-                <p>See which stocks and ETFs matter today.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🤖 AI Explanations</h3>
-                <p>Clear breakdown of financial terms — jargon-free.</p>
-            </div>
-            <div class="feature-card">
-                <h3>⭐ Personal Watchlist</h3>
-                <p>Track what matters to you with real-time updates.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🌍 Market Context</h3>
-                <p>Understand how global events affect your portfolio.</p>
+        <div class="container">
+            <h2>Why Choose PortfolAI?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Commission-Free Trading</h3>
+                    <p>Trade stocks, ETFs, and options with zero commission fees.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Insights</h3>
+                    <p>Get personalized investment recommendations powered by advanced AI.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile-First Design</h3>
+                    <p>Trade on the go with our intuitive mobile app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Reliable</h3>
+                    <p>Your investments are protected with bank-level security.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- EDUCATION HUB -->
-    <section class="education">
-        <h2>Learn While You Invest</h2>
-        <p>Explore our Learning Hub — AI-powered lessons, guides, and tools to help you grow your financial knowledge.</p>
-        <a href="#" class="btn">Explore Learning Hub</a>
+    <!-- Market Overview -->
+    <section class="market-overview">
+        <div class="container">
+            <h2>Market Overview</h2>
+            <div class="market-cards">
+                <div class="market-card">
+                    <div class="market-header">
+                        <h3>S&P 500</h3>
+                        <span class="market-change positive">+0.8%</span>
+                    </div>
+                    <div class="market-price">4,567.89</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-header">
+                        <h3>NASDAQ</h3>
+                        <span class="market-change positive">+1.2%</span>
+                    </div>
+                    <div class="market-price">14,234.56</div>
+                </div>
+                <div class="market-card">
+                    <div class="market-header">
+                        <h3>DOW</h3>
+                        <span class="market-change negative">-0.3%</span>
+                    </div>
+                    <div class="market-price">34,567.89</div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- CTA -->
+    <!-- CTA Section -->
     <section class="cta">
-        <h2>Start Your Investing Journey Today</h2>
-        <a href="#" class="btn">Sign Up Free</a>
+        <div class="container">
+            <h2>Ready to Start Investing?</h2>
+            <p>Join millions of investors who trust PortfolAI with their money.</p>
+            <button class="btn-primary large">Get Started</button>
+        </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-links">
-            <a href="#">About</a> | 
-            <a href="#">Security</a> | 
-            <a href="#">Contact</a> | 
-            <a href="#">Legal</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Investing</h4>
+                    <ul>
+                        <li><a href="#">Stocks</a></li>
+                        <li><a href="#">ETFs</a></li>
+                        <li><a href="#">Options</a></li>
+                        <li><a href="#">Crypto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Learn</h4>
+                    <ul>
+                        <li><a href="#">Investing Basics</a></li>
+                        <li><a href="#">Market News</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PortfolAI. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
         </div>
-        <p>&copy; 2025 PortfolAI — Educational insights, not financial advice.</p>
     </footer>
 </body>
 </html>
