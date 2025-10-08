@@ -2,214 +2,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolAI | Smart Investment Insights</title>
-    
-    <!-- Google Fonts - Robinhood uses system fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'home/styles.css' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortfolAI | Smart Investment Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'home/styles.css' %}">
 </head>
 <body>
-    <!-- Navigation Header -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <h1>PortfolAI</h1>
-            </div>
-            <div class="nav-links">
-                <a href="#" class="nav-link">Invest</a>
-                <a href="#" class="nav-link">Learn</a>
-                <a href="#" class="nav-link">News</a>
-                <a href="#" class="nav-link">Account</a>
-            </div>
-            <div class="nav-actions">
-                <button class="btn-secondary">Sign In</button>
-                <button class="btn-primary">Sign Up</button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>AI-Powered Investing</h1>
-                <p>Experience the future of finance with intelligent insights, real-time analytics, and commission-free trading powered by advanced AI.</p>
-                <div class="hero-actions">
-                    <button class="btn-primary large">Start Trading</button>
-                    <button class="btn-outline large">View Dashboard</button>
-                </div>
-                <p class="hero-disclaimer">Advanced AI insights • Zero commission fees • Real-time data</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>AI-Powered Investing</h1>
+        <p>Experience the future of finance with intelligent insights, real-time analytics, and commission-free trading powered by advanced AI.</p>
+        <div class="hero-actions">
+          <button class="btn-primary large">Start Trading</button>
+          <button class="btn-outline large">View Dashboard</button>
+        </div>
+        <p class="hero-disclaimer">Advanced AI insights • Zero commission fees • Real-time data</p>
+      </div>
+
+      <!-- Stock Dashboard Mockup -->
+      <div class="hero-visual">
+        <div class="desktop-mockup">
+          <div class="desktop-screen">
+            <div class="desktop-header">
+              <div class="desktop-title">PortfolAI Dashboard</div>
+              <div class="desktop-time">9:41 AM</div>
             </div>
-            <div class="hero-visual">
-                <div class="desktop-mockup">
-                    <div class="desktop-screen">
-                        <div class="desktop-header">
-                            <div class="desktop-title">PortfolAI Dashboard</div>
-                            <div class="desktop-time">9:41 AM</div>
-                        </div>
-                        <div class="desktop-content">
-                            <div class="dashboard-section">
-                                <h4 class="dashboard-subtitle">Live Market Data</h4>
-                                <div class="desktop-stock-grid">
-                                    <div class="desktop-stock">
-                                        <div class="stock-header">
-                                            <span class="stock-symbol">AAPL</span>
-                                            <span class="stock-company">Apple Inc.</span>
-                                        </div>
-                                        <div class="stock-price">$185.42</div>
-                                        <div class="stock-change positive">
-                                            <span class="change-value">+3.27</span>
-                                            <span class="change-percent">(+1.80%)</span>
-                                        </div>
-                                    </div>
-                                    <div class="desktop-stock">
-                                        <div class="stock-header">
-                                            <span class="stock-symbol">GOOGL</span>
-                                            <span class="stock-company">Alphabet Inc.</span>
-                                        </div>
-                                        <div class="stock-price">$142.15</div>
-                                        <div class="stock-change positive">
-                                            <span class="change-value">+2.45</span>
-                                            <span class="change-percent">(+1.75%)</span>
-                                        </div>
-                                    </div>
-                                    <div class="desktop-stock">
-                                        <div class="stock-header">
-                                            <span class="stock-symbol">MSFT</span>
-                                            <span class="stock-company">Microsoft Corp.</span>
-                                        </div>
-                                        <div class="stock-price">$378.85</div>
-                                        <div class="stock-change negative">
-                                            <span class="change-value">-1.23</span>
-                                            <span class="change-percent">(-0.32%)</span>
-                                        </div>
-                                    </div>
-                                    <div class="desktop-stock">
-                                        <div class="stock-header">
-                                            <span class="stock-symbol">NVDA</span>
-                                            <span class="stock-company">NVIDIA Corp.</span>
-                                        </div>
-                                        <div class="stock-price">$875.28</div>
-                                        <div class="stock-change positive">
-                                            <span class="change-value">+12.45</span>
-                                            <span class="change-percent">(+1.44%)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="desktop-content">
+              <div class="dashboard-section">
+                <h4 class="dashboard-subtitle">Live Market Data</h4>
+                <div class="desktop-stock-grid">
+                  <!-- Card 1 -->
+                  <div class="desktop-stock">
+                    <div class="stock-header">
+                      <span class="stock-symbol">AAPL</span>
+                      <span class="stock-company">Apple Inc.</span>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <h2>Why Choose PortfolAI?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3>Market Trends Overview</h3>
-                    <p>Get comprehensive insights into market movements and trending opportunities.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>AI-Powered Insights</h3>
-                    <p>Get personalized investment recommendations powered by advanced AI.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Intuitive Design</h3>
-                    <p>Navigate with ease through our clean and user-friendly interface.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Secure & Reliable</h3>
-                    <p>We keep your personal information safe and ensure all data used is secure and protected.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Market Overview -->
-    <section class="market-overview">
-        <div class="container">
-            <h2>Market Overview</h2>
-            <div class="market-cards">
-                <div class="market-card">
-                    <div class="market-header">
-                        <h3>S&P 500</h3>
-                        <span class="market-change positive">+1.24%</span>
+                    <div class="stock-price">$185.42</div>
+                    <div class="stock-change positive">
+                      <span class="change-value">+3.27</span>
+                      <span class="change-percent">(+1.80%)</span>
                     </div>
-                    <div class="market-price">4,892.15</div>
-                </div>
-                <div class="market-card">
-                    <div class="market-header">
-                        <h3>NASDAQ</h3>
-                        <span class="market-change positive">+2.18%</span>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="desktop-stock">
+                    <div class="stock-header">
+                      <span class="stock-symbol">GOOGL</span>
+                      <span class="stock-company">Alphabet Inc.</span>
                     </div>
-                    <div class="market-price">15,847.32</div>
-                </div>
-                <div class="market-card">
-                    <div class="market-header">
-                        <h3>DOW</h3>
-                        <span class="market-change positive">+0.87%</span>
+                    <div class="stock-price">$142.15</div>
+                    <div class="stock-change positive">
+                      <span class="change-value">+2.45</span>
+                      <span class="change-percent">(+1.75%)</span>
                     </div>
-                    <div class="market-price">38,245.67</div>
-                </div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="desktop-stock">
+                    <div class="stock-header">
+                      <span class="stock-symbol">MSFT</span>
+                      <span class="stock-company">Microsoft Corp.</span>
+                    </div>
+                    <div class="stock-price">$378.85</div>
+                    <div class="stock-change negative">
+                      <span class="change-value">-1.23</span>
+                      <span class="change-percent">(-0.32%)</span>
+                    </div>
+                  </div>
+                  <!-- Card 4 -->
+                  <div class="desktop-stock">
+                    <div class="stock-header">
+                      <span class="stock-symbol">NVDA</span>
+                      <span class="stock-company">NVIDIA Corp.</span>
+                    </div>
+                    <div class="stock-price">$875.28</div>
+                    <div class="stock-change positive">
+                      <span class="change-value">+12.45</span>
+                      <span class="change-percent">(+1.44%)</span>
+                    </div>
+                  </div>
+                </div><!-- /desktop-stock-grid -->
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div><!-- /hero-visual -->
+    </div>
+  </section>
 
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Start Investing?</h2>
-            <p>Join millions of investors who trust PortfolAI with their money.</p>
-            <button class="btn-primary large">Get Started</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Investing</h4>
-                    <ul>
-                        <li><a href="#">Stocks</a></li>
-                        <li><a href="#">ETFs</a></li>
-                        <li><a href="#">Options</a></li>
-                        <li><a href="#">Crypto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Learn</h4>
-                    <ul>
-                        <li><a href="#">Investing Basics</a></li>
-                        <li><a href="#">Market News</a></li>
-                        <li><a href="#">Tutorials</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Security</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 PortfolAI. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
