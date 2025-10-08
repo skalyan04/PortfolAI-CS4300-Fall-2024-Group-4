@@ -220,10 +220,10 @@ body {
 
 .desktop-screen {
     width: 600px;
-    height: 540px;
+    height: 580px;
     background: var(--bg-primary);
     border-radius: 20px;
-    padding: 24px;
+    padding: 32px;
     box-shadow: var(--shadow-neumorphism), var(--glow-purple);
     border: 2px solid var(--card-border);
     position: relative;
@@ -304,9 +304,9 @@ body {
 .desktop-stock-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Always 2x2 on desktop */
-    gap: 24px;
+    gap: 28px;
     width: 100%;
-    padding: 8px;
+    padding: 12px;
     height: auto; /* let rows expand naturally */
     align-items: stretch; /* ensure all cards equal height */
 }
@@ -315,7 +315,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 24px;
+    padding: 28px;
     background: var(--card-bg);
     border-radius: 24px;
     border: 1px solid var(--card-border);
@@ -323,7 +323,7 @@ body {
     transition: all 0.3s ease, transform 0.3s ease;
     position: relative;
     overflow: hidden;
-    min-height: 200px;   /* consistent baseline */
+    min-height: 220px;   /* consistent baseline */
     height: 100%;        /* stretch with siblings */
 }
 
@@ -794,18 +794,20 @@ body {
     
     .desktop-screen {
         width: 500px;
-        height: 480px;
+        height: 520px;
+        padding: 28px;
     }
     
     .desktop-stock-grid {
         grid-template-columns: 1fr; /* single column */
-        gap: 20px;
-        padding: 6px;
+        gap: 24px;
+        padding: 10px;
     }
     
     .desktop-stock {
-        padding: 20px;
+        padding: 24px;
         border-radius: 20px;
+        min-height: 200px;
     }
     
     .features h2,
@@ -851,18 +853,19 @@ body {
     
     .desktop-screen {
         width: 450px;
-        height: 440px;
+        height: 480px;
+        padding: 24px;
     }
     
     .desktop-stock-grid {
-        height: 200px;
-        gap: 16px;
-        padding: 4px;
+        gap: 20px;
+        padding: 8px;
     }
     
     .desktop-stock {
-        padding: 16px;
+        padding: 20px;
         border-radius: 18px;
+        min-height: 180px;
     }
     
     .feature-card,
