@@ -152,7 +152,7 @@ body {
 .hero {
     background: var(--gradient-bg);
     color: var(--text-primary);
-    padding: 100px 0;
+    padding: 60px 0;
     position: relative;
     overflow: hidden;
 }
@@ -175,7 +175,7 @@ body {
     padding: 0 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 50px;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -220,10 +220,10 @@ body {
 
 .desktop-screen {
     width: 600px;
-    height: 640px;
+    height: 5200px;
     background: var(--bg-primary);
     border-radius: 20px;
-    padding: 40px;
+    padding: 32px;
     box-shadow: var(--shadow-neumorphism), var(--glow-purple);
     border: 2px solid var(--card-border);
     position: relative;
