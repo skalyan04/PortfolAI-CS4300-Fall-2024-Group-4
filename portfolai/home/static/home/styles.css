@@ -1,4 +1,7 @@
-/* Futuristic Dark Theme Styles */
+/* ========================================
+   PortfolAI - Futuristic Dark Theme Styles
+   ======================================== */
+
 :root {
     --bg-primary: #0f0f10;
     --bg-secondary: #1a1a1a;
@@ -18,7 +21,13 @@
     --gradient-bg: linear-gradient(135deg, #0f0f10 0%, #1a1a1a 100%);
 }
 
-* {
+/* ========================================
+   CSS Reset & Base Styles
+   ======================================== */
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,9 +39,13 @@ body {
     color: var(--text-primary);
     line-height: 1.5;
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Navigation */
+/* ========================================
+   Navigation Component
+   ======================================== */
 .navbar {
     background: rgba(26, 26, 26, 0.95);
     backdrop-filter: blur(20px);
@@ -86,8 +99,12 @@ body {
     gap: 12px;
 }
 
-/* Buttons */
-.btn-primary, .btn-secondary, .btn-outline {
+/* ========================================
+   Button Components
+   ======================================== */
+.btn-primary, 
+.btn-secondary, 
+.btn-outline {
     padding: 12px 24px;
     border-radius: 12px;
     font-weight: 600;
@@ -100,6 +117,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden;
+    font-family: inherit;
 }
 
 .btn-primary {
@@ -142,13 +160,16 @@ body {
     transform: translateY(-2px);
 }
 
-.btn-primary.large, .btn-outline.large {
+.btn-primary.large, 
+.btn-outline.large {
     padding: 16px 32px;
     font-size: 16px;
     border-radius: 16px;
 }
 
-/* Hero Section */
+/* ========================================
+   Hero Section
+   ======================================== */
 .hero {
     background: var(--gradient-bg);
     color: var(--text-primary);
@@ -211,7 +232,9 @@ body {
     color: var(--text-muted);
 }
 
-/* Desktop Mockup */
+/* ========================================
+   Desktop Mockup Component
+   ======================================== */
 .desktop-mockup {
     display: flex;
     justify-content: center;
@@ -289,7 +312,6 @@ body {
     height: auto;
 }
 
-
 .desktop-stock-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2x2 */
@@ -331,7 +353,7 @@ body {
     );
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 24px;
+    border-radius: 16px;
     pointer-events: none;
 }
 
@@ -417,7 +439,9 @@ body {
     opacity: 0.9;
 }
 
-/* Features Section */
+/* ========================================
+   Features Section
+   ======================================== */
 .features {
     padding: 100px 0;
     background: var(--bg-secondary);
@@ -510,7 +534,9 @@ body {
     font-size: 16px;
 }
 
-/* Market Overview */
+/* ========================================
+   Market Overview Section
+   ======================================== */
 .market-overview {
     padding: 100px 0;
     background: var(--bg-primary);
@@ -614,7 +640,9 @@ body {
     text-shadow: var(--glow-blue);
 }
 
-/* CTA Section */
+/* ========================================
+   Call-to-Action Section
+   ======================================== */
 .cta {
     padding: 100px 0;
     background: var(--gradient-purple);
@@ -666,7 +694,9 @@ body {
     transform: translateY(-2px);
 }
 
-/* Footer */
+/* ========================================
+   Footer Component
+   ======================================== */
 .footer {
     background: var(--bg-primary);
     color: white;
@@ -752,7 +782,9 @@ body {
     text-shadow: var(--glow-purple);
 }
 
-/* Responsive Design */
+/* ========================================
+   Responsive Design
+   ======================================== */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -790,8 +822,8 @@ body {
     
     .desktop-stock-grid {
         grid-template-columns: 1fr; /* single column */
-        gap: 32px;
-        padding: 16px 16px 20px 16px;
+        gap: 20px;
+        padding: 0;
     }
     
     .desktop-stock {
@@ -848,8 +880,8 @@ body {
     }
     
     .desktop-stock-grid {
-        gap: 28px;
-        padding: 12px 12px 16px 12px;
+        gap: 20px;
+        padding: 0;
     }
     
     .desktop-stock {
