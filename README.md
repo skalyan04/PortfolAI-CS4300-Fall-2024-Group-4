@@ -34,20 +34,7 @@ From Git BEFORE Starting Your Coding Session
    ```
 
 5. **Access the application:**
-   - Open your browser and go to: **http://127.0.0.1:3000/**
+   - Open devedu and go to 'app'
    - The PortfolAI landing page will be displayed
-
-### 🎨 Features
-- **Futuristic Dark Theme**: Modern fintech/crypto app aesthetic
-- **AI-Powered Interface**: Smart investment insights and analytics
-- **Real-time Market Data**: Live market overview with glowing data visualization
-- **Responsive Design**: Mobile-first approach with desktop optimization
-- **Neon Glow Effects**: Purple gradient accents with professional styling
-
-### 🛠️ Development Notes
-- Built with Django 5.2.7
-- Uses SQLite database for development
-- Static files served from `home/static/home/`
-- Templates located in `home/templates/home/`
 
 # Test
