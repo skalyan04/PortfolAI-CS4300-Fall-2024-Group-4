@@ -305,19 +305,20 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    height: 240px;
+    gap: 24px;
+    height: 280px;
     width: 100%;
+    padding: 8px;
 }
 
 .desktop-stock {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    background: var(--bg-secondary);
-    border-radius: 16px;
-    border: 2px solid var(--card-border);
-    box-shadow: var(--shadow-card);
+    padding: 24px;
+    background: var(--card-bg);
+    border-radius: 24px;
+    border: 1px solid var(--card-border);
+    box-shadow: var(--shadow-neumorphism);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -332,20 +333,21 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-purple);
-    opacity: 0;
+    background: linear-gradient(135deg, rgba(106, 90, 205, 0.03) 0%, rgba(138, 43, 226, 0.03) 100%);
+    opacity: 1;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    border-radius: 24px;
 }
 
 .desktop-stock:hover {
-    transform: translateY(-6px);
-    box-shadow: var(--glow-purple), 0 8px 32px rgba(0, 0, 0, 0.4);
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--glow-purple), 0 12px 40px rgba(0, 0, 0, 0.5);
     border-color: var(--accent-purple);
 }
 
 .desktop-stock:hover::before {
-    opacity: 0.05;
+    opacity: 0.1;
 }
 
 .stock-header {
@@ -776,8 +778,14 @@ body {
     }
     
     .desktop-stock-grid {
-        height: 200px;
-        gap: 16px;
+        height: 240px;
+        gap: 20px;
+        padding: 6px;
+    }
+    
+    .desktop-stock {
+        padding: 20px;
+        border-radius: 20px;
     }
     
     .features h2,
@@ -827,8 +835,14 @@ body {
     }
     
     .desktop-stock-grid {
-        height: 180px;
-        gap: 12px;
+        height: 200px;
+        gap: 16px;
+        padding: 4px;
+    }
+    
+    .desktop-stock {
+        padding: 16px;
+        border-radius: 18px;
     }
     
     .feature-card,
