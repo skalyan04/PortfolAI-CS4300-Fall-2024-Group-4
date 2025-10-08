@@ -302,16 +302,15 @@ body {
 }
 
 .desktop-stock-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
     height: 240px;
     width: 100%;
 }
 
 .desktop-stock {
-    flex: 0 0 calc(50% - 10px);
-    height: calc(50% - 10px);
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -776,6 +775,11 @@ body {
         height: 350px;
     }
     
+    .desktop-stock-grid {
+        height: 200px;
+        gap: 16px;
+    }
+    
     .features h2,
     .market-overview h2 {
         font-size: 36px;
@@ -820,6 +824,11 @@ body {
     .desktop-screen {
         width: 450px;
         height: 320px;
+    }
+    
+    .desktop-stock-grid {
+        height: 180px;
+        gap: 12px;
     }
     
     .feature-card,
