@@ -3,22 +3,44 @@
    ======================================== */
 
 :root {
-    --bg-primary: #0f0f10;
-    --bg-secondary: #1a1a1a;
-    --accent-purple: #6a5acd;
-    --accent-purple-light: #8a2be2;
-    --accent-blue: #4a90e2;
+    /* Dark solid background colors */
+    --bg-primary: #000000;
+    --bg-secondary: #111111;
+    --bg-tertiary: #1a1a1a;
+    
+    /* High contrast accent colors */
+    --accent-purple: #7c3aed;
+    --accent-purple-light: #a855f7;
+    --accent-blue: #3b82f6;
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    
+    /* High contrast text colors */
     --text-primary: #ffffff;
-    --text-secondary: #999999;
-    --text-muted: #666666;
-    --card-bg: #1a1a1a;
-    --card-border: #333333;
-    --glow-purple: 0 0 20px rgba(106, 90, 205, 0.3);
-    --glow-blue: 0 0 20px rgba(74, 144, 226, 0.3);
-    --shadow-neumorphism: 8px 8px 16px rgba(0, 0, 0, 0.3), -8px -8px 16px rgba(255, 255, 255, 0.02);
-    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
-    --gradient-purple: linear-gradient(135deg, #6a5acd 0%, #8a2be2 100%);
-    --gradient-bg: linear-gradient(135deg, #0f0f10 0%, #1a1a1a 100%);
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-disabled: #6b7280;
+    
+    /* Card and UI colors */
+    --card-bg: #111111;
+    --card-bg-hover: #1a1a1a;
+    --card-border: #374151;
+    --card-border-hover: #4b5563;
+    
+    /* Enhanced shadows and glows */
+    --glow-purple: 0 0 20px rgba(124, 58, 237, 0.4);
+    --glow-blue: 0 0 20px rgba(59, 130, 246, 0.4);
+    --glow-green: 0 0 20px rgba(16, 185, 129, 0.4);
+    --glow-red: 0 0 20px rgba(239, 68, 68, 0.4);
+    
+    /* Enhanced shadows */
+    --shadow-neumorphism: 8px 8px 16px rgba(0, 0, 0, 0.5), -8px -8px 16px rgba(255, 255, 255, 0.03);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.6);
+    --shadow-hover: 0 8px 32px rgba(0, 0, 0, 0.7);
+    
+    /* Gradients */
+    --gradient-purple: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+    --gradient-bg: linear-gradient(135deg, #000000 0%, #111111 100%);
 }
 
 /* ========================================
@@ -47,9 +69,8 @@ body {
    Navigation Component
    ======================================== */
 .navbar {
-    background: rgba(26, 26, 26, 0.95);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid var(--card-border);
+    background: var(--bg-primary);
+    border-bottom: 2px solid var(--card-border);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -276,9 +297,9 @@ body {
     margin-bottom: 28px;
     font-weight: 500;
     padding: 20px 24px;
-    background: var(--card-bg);
+    background: var(--bg-tertiary);
     border-radius: 12px;
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--card-border);
     box-shadow: var(--shadow-card);
 }
 
@@ -293,11 +314,11 @@ body {
 }
 
 .desktop-content {
-    background: var(--card-bg);
+    background: var(--bg-tertiary);
     border-radius: 16px;
     padding: 20px; /* reduce padding */
     box-shadow: var(--shadow-card);
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--card-border);
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
@@ -327,9 +348,9 @@ body {
     flex-direction: column;
     justify-content: space-between;
     padding: 20px; /* reduce padding */
-    background: var(--card-bg);
+    background: var(--bg-secondary);
     border-radius: 16px; /* match inner panel */
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--card-border);
     box-shadow: var(--shadow-neumorphism);
     transition: all 0.3s ease, transform 0.3s ease;
     position: relative;
@@ -359,8 +380,9 @@ body {
 
 .desktop-stock:hover {
     transform: translateY(-8px) scale(1.03);
-    box-shadow: var(--glow-purple), 0 12px 40px rgba(0, 0, 0, 0.5);
-    border-color: var(--accent-purple);
+    background: var(--card-bg-hover);
+    box-shadow: var(--glow-purple), var(--shadow-hover);
+    border-color: var(--card-border-hover);
 }
 
 .desktop-stock:hover::before {
@@ -419,13 +441,13 @@ body {
 }
 
 .stock-change.positive {
-    color: #00ff88;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+    color: var(--accent-green);
+    text-shadow: var(--glow-green);
 }
 
 .stock-change.negative {
-    color: #ff4757;
-    text-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+    color: var(--accent-red);
+    text-shadow: var(--glow-red);
 }
 
 .change-value {
@@ -489,9 +511,9 @@ body {
     text-align: center;
     padding: 40px 32px;
     border-radius: 20px;
-    background: var(--card-bg);
+    background: var(--bg-tertiary);
     box-shadow: var(--shadow-neumorphism);
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--card-border);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -575,11 +597,11 @@ body {
 }
 
 .market-card {
-    background: var(--card-bg);
+    background: var(--bg-tertiary);
     padding: 32px;
     border-radius: 20px;
     box-shadow: var(--shadow-neumorphism);
-    border: 1px solid var(--card-border);
+    border: 2px solid var(--card-border);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -622,15 +644,15 @@ body {
 }
 
 .market-change.positive {
-    color: #00ff88;
+    color: var(--accent-green);
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+    text-shadow: var(--glow-green);
 }
 
 .market-change.negative {
-    color: #ff4757;
+    color: var(--accent-red);
     font-weight: 700;
-    text-shadow: 0 0 10px rgba(255, 71, 87, 0.3);
+    text-shadow: var(--glow-red);
 }
 
 .market-price {
