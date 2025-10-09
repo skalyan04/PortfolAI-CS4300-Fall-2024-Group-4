@@ -39,4 +39,78 @@ From Git BEFORE Starting Your Coding Session
    
    *Note: Go to portfolai/settings.py and add "app-<your_name>container-20.devedu.io"*
 
+## Project Structure
+
+```
+PortfolAI-CS4300-Fall-2024-Group-4/
+├── .idea/                                    # IDE configuration files
+├── portfolai/                               # Main Django project directory
+│   ├── home/                                # Django app for homepage
+│   │   ├── __init__.py
+│   │   ├── admin.py                         # Django admin configuration
+│   │   ├── apps.py                          # App configuration
+│   │   ├── models.py                        # Database models
+│   │   ├── tests.py                         # Unit tests
+│   │   ├── urls.py                          # URL routing for home app
+│   │   ├── views.py                         # View functions
+│   │   ├── migrations/                      # Database migration files
+│   │   │   └── __init__.py
+│   │   ├── static/home/                     # Static files for home app
+│   │   │   ├── tailwind-build.css          # Compiled Tailwind CSS
+│   │   │   ├── saasy-custom.css            # Custom CSS styles
+│   │   │   ├── saasy.js                    # JavaScript functionality
+│   │   │   └── assets/                     # Image and media assets
+│   │   │       ├── logo.png                # PortfolAI logo
+│   │   │       └── images/                 # Image assets
+│   │   │           ├── background/         # Background images
+│   │   │           │   └── dots.svg
+│   │   │           ├── brand-logos/        # Company logos
+│   │   │           │   ├── adobe.svg
+│   │   │           │   ├── airbnb.svg
+│   │   │           │   ├── google.svg
+│   │   │           │   ├── microsoft.svg
+│   │   │           │   ├── reddit.svg
+│   │   │           │   └── stripe.svg
+│   │   │           ├── home/               # Homepage images
+│   │   │           │   ├── dash.png
+│   │   │           │   ├── dashboard.png
+│   │   │           │   ├── forest.jpg
+│   │   │           │   ├── insights.png
+│   │   │           │   ├── mountain.jpg
+│   │   │           │   ├── photography.jpg
+│   │   │           │   └── sample.jpg
+│   │   │           └── people/             # People images
+│   │   │               ├── man.jpg
+│   │   │               ├── man2.jpg
+│   │   │               └── women.jpg
+│   │   └── templates/home/                 # HTML templates
+│   │       └── index.html                  # Main landing page template
+│   ├── portfolai/                          # Django project settings
+│   │   ├── __init__.py
+│   │   ├── asgi.py                         # ASGI configuration
+│   │   ├── settings.py                     # Django settings
+│   │   ├── urls.py                         # Main URL configuration
+│   │   └── wsgi.py                         # WSGI configuration
+│   ├── manage.py                           # Django management script
+│   ├── db.sqlite3                          # SQLite database file
+│   ├── requirements.txt                    # Python dependencies
+│   ├── testfile.txt                        # Test file
+│   └── myenv/                              # Virtual environment
+│       ├── bin/                            # Virtual environment binaries
+│       ├── lib/                            # Installed packages
+│       └── pyvenv.cfg                      # Virtual environment config
+├── .gitignore                              # Git ignore rules
+├── LICENSE                                 # Project license
+├── README.md                               # Project documentation
+└── Reflection1.txt                         # Project reflection document
+```
+
+### Key Components
+
+- **Django App (`home/`)**: Contains the main landing page functionality
+- **Static Files**: All CSS, JavaScript, and image assets for the frontend
+- **Templates**: HTML templates using Django template language
+- **Database**: SQLite database for storing application data
+- **Virtual Environment**: Isolated Python environment with project dependencies
+
 # Test
