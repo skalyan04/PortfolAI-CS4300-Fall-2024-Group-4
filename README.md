@@ -7,7 +7,6 @@ From Git BEFORE Starting Your Coding Session
 
 ### Prerequisites
 - Python 3.8+ installed
-- Virtual environment setup
 
 ### Setup Instructions
 
@@ -16,28 +15,39 @@ From Git BEFORE Starting Your Coding Session
    cd PortfolAI-CS4300-Fall-2024-Group-4/portfolai
    ```
 
-2. **Activate your virtual environment:**
+2. **Create a virtual environment:**
+   ```bash
+   python -m venv myenv
+   ```
+   *Note: This creates a virtual environment named `myenv`*
+
+3. **Activate your virtual environment:**
    ```bash
    source myenv/bin/activate
    ```
-   *Note: Replace `myenv` with your actual virtual environment name*
 
-3. **Install required dependencies:**
+4. **Install required dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
    *Note: The requirements.txt contains Django REST Framework and other necessary packages*
 
-4. **Run the Django development server:**
+5. **Run the Django development server:**
    ```bash
    python manage.py runserver 0.0.0.0:3000
    ```
 
-5. **Access the application:**
+6. **Access the application:**
    - Open devedu and go to 'app'
    - The PortfolAI landing page will be displayed
    
    *Note: Go to portfolai/settings.py and add "app-<your_name>container-20.devedu.io"*
+
+### Additional Notes
+
+- **To deactivate the virtual environment:** Simply run `deactivate` in your terminal
+- **Virtual environment location:** The `myenv` folder will be created in the `portfolai/` directory
+- **Dependencies:** All required packages are listed in `requirements.txt` and will be installed in the virtual environment
 
 ## Project Structure
 
@@ -110,7 +120,6 @@ PortfolAI-CS4300-Fall-2024-Group-4/
 - **Django App (`home/`)**: Contains the main landing page functionality
 - **Static Files**: All CSS, JavaScript, and image assets for the frontend
 - **Templates**: HTML templates using Django template language
-- **Database**: SQLite database for storing application data
 - **Virtual Environment**: Isolated Python environment with project dependencies
 
 # Test
